@@ -4,10 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="{% static 'base/css/bootstrap.min.css' %}">
+    {% block title %}
+    {% endblock %}
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="{% static 'static/base/css/bootstrap.min.css' %}">
 </head>
 <body>
+
+{% block body %}
+
+{% endblock %}
+
+
 <script src="{% static 'base/js/jquery.min.js' %}"></script>
 <script src="{% static 'base/js/bootstrap.min.js' %}"></script>
+
+{% block extjs %}
+{% endblock %}
 </body>
 </html>
