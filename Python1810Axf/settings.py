@@ -54,9 +54,7 @@ ROOT_URLCONF = 'Python1810Axf.urls'
 
 TEMPLATES = [
     {
-        'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')]
-        ,
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -78,7 +76,7 @@ WSGI_APPLICATION = 'Python1810Axf.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'python1810axf',
+        'NAME': 'python_axf',
         'USER': 'root',
         'PASSWORD': '111111'
     }
